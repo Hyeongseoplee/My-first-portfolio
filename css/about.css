@@ -1,0 +1,84 @@
+/*About*/
+.about {
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.about__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about__canDos {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.about__canDos .canDo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.canDo__icon {
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  line-height: 130px;
+  font-size: 50px;
+  color: var(--color-dough);
+}
+
+.canDo__icon i {
+  transition: transform 200ms linear;
+}
+
+.canDo__icon:hover i {
+  transform: rotate(-30deg);
+  color: rgba(80, 97, 50, 0.924);
+}
+
+.canDo__title,
+.canDo__description {
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.about__careers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border-top: solid 4px black;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.career {
+  margin-left: 30px;
+  display: Flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.career img {
+  margin-right: 20px;
+  width: 70px;
+  height: 30px;
+}
+
+.career__period {
+  color: var(--color-light-grey);
+  text-align: left;
+}

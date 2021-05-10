@@ -1,0 +1,37 @@
+/*Work*/
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__categories {
+  display: flex;
+  border-top: solid 3px black;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.category__btn {
+  width: 130px;
+  height: 30px;
+  margin: 40px 1px 20px 0px;
+  border: solid 1px rgba(128, 128, 128, 0.339);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__projects {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  overflow: ;
+}
+
+.work__projects img {
+  width: 150px;
+  height: 250px;
+}

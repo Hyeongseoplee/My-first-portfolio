@@ -1,0 +1,132 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.navBar img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.navBar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-medium);
+}
+
+.navBar__logo a {
+  font-size: var(--font-medium);
+  font-weight: var(--font-bold);
+}
+
+.navBar__menu {
+  display: Flex;
+}
+
+.navBar__menu li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.navBar__menu li:nth-child(4) {
+  margin-right: 25px;
+}
+
+.active {
+  border: var(--border-regular);
+  border-radius: var(--border-radius);
+}
+
+.navBar__menu__item {
+  padding: 8px 12px;
+  border-radius: 2px;
+  transition: border 0.2s linear, background-color 0.5s linear;
+}
+
+.navBar__menu__item:hover {
+  background-color: #d73739;
+}
+
+/*Home*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  animation: bgEffect 2s linear infinite;
+}
+
+@keyframes bgEffect {
+  0% {
+    background-color: rgb(80, 97, 50);
+  }
+  25% {
+    background-color: rgba(80, 97, 50, 0.924);
+  }
+  50% {
+    background-color: rgba(80, 97, 50, 0.849);
+  }
+  100% {
+    background-color: rgb(80, 97, 50);
+  }
+}
+
+.home__image {
+  position: relative;
+}
+
+.home .home__avatar {
+  width: 150px;
+  height: 280px;
+  background: center;
+  border-radius: 11%;
+  padding: 25px 8px;
+  border: var(--border-medium);
+  background-color: whitesmoke;
+}
+
+.avatar__btn {
+  width: 15px;
+  height: 15px;
+  border: var(--border-medium);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 65px;
+  transition: background-color 0.3s linear;
+}
+
+.avatar__btn:hover {
+  background-color: var(--color-black);
+}
+
+.home__title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.home__contact {
+  margin-top: 20px;
+  border: solid 1px black;
+  padding: 6px;
+  border-radius: 3px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: none;
+  }
+}
