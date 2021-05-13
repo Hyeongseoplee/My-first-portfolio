@@ -3,8 +3,7 @@
   display: Flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: ivory;
+  background-color: rgba(128, 128, 128, 0.137);
   padding: 30px 30px;
 }
 
@@ -23,17 +22,19 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-right: 30px;
   margin-bottom: 20px;
 }
 
-.testimonial .testimonial__avatar:last-child {
+.testimonial .testimonial__avatar:nth-child(even) {
   margin-left: 50px;
-  margin-right: 0px;
+}
+
+.testimonial .testimonial__avatar:nth-child(odd) {
+  margin-right: 50px;
 }
 
 .recommend__speech-bubble {
-  background-color: rgba(205, 92, 92, 0.189);
+  background-color: white;
   width: 80%;
   height: 160px;
   padding: 20px 30px;

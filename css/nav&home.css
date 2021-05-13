@@ -45,7 +45,7 @@
 .navBar__menu__item {
   padding: 8px 12px;
   border-radius: 2px;
-  transition: border 0.2s linear, background-color 0.5s linear;
+  transition: border 0.2s linear, background-color 0.2s linear;
 }
 
 .navBar__menu__item:hover {
@@ -98,7 +98,8 @@
   border-radius: 50%;
   position: absolute;
   bottom: 10px;
-  right: 65px;
+  right: 50%;
+  left: 69px;
   transition: background-color 0.3s linear;
 }
 

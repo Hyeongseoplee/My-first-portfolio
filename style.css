@@ -56,9 +56,16 @@ p {
 }
 
 /*Section common*/
+
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1200px;
   margin: 0;
+}
+
+.section__container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
