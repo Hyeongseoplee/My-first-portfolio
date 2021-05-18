@@ -18,32 +18,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.js" />
+    <link rel="stylesheet" href="javascript/navbar.js" />
   </head>
   <body>
     <!-- nav&Home -->
     <section class="home section">
+      <nav class="navBar">
+        <div class="navBar__logo">
+          <img src="imgs/logo.png" class="navBar__img" />
+          <a href="#">Venny</a>
+        </div>
+
+        <ul class="navBar__menu">
+          <li class="navBar__menu__item">Home</li>
+          <li class="navBar__menu__item">About</li>
+          <li class="navBar__menu__item">Skills</li>
+          <li class="navBar__menu__item">My work</li>
+          <li class="navBar__menu__item">Testimonial</li>
+          <li class="navBar__menu__item">Contact</li>
+        </ul>
+
+        <button class="navBar__toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
       <div class="section__container">
-        <nav class="navBar">
-          <div class="navBar__logo">
-            <img src="imgs/pizza.png" class="navBar__img" />
-            <a href="#">Venny</a>
-          </div>
-
-          <ul class="navBar__menu">
-            <li class="navBar__menu__item">Home</li>
-            <li class="navBar__menu__item">About</li>
-            <li class="navBar__menu__item">Skills</li>
-            <li class="navBar__menu__item">My work</li>
-            <li class="navBar__menu__item">Testimonial</li>
-            <li class="navBar__menu__item">Contact</li>
-          </ul>
-
-          <button class="navBar__toggle-btn">
-            <i class="fas fa-bars"></i>
-          </button>
-        </nav>
-
         <div class="home__image">
           <img class="home__avatar" src="imgs/avatar.jpg" alt="It's me." />
           <div class="avatar__btn"></div>

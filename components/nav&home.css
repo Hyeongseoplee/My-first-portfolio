@@ -1,16 +1,16 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  position: relative;
+  position: absolute;
+  top: 10px;
 }
 
 .navBar img {
   width: 50px;
   height: 50px;
-  margin: 0;
+  margin: 0 10px;
 }
 
 .navBar__logo {
@@ -28,6 +28,7 @@
 .navBar__menu {
   display: Flex;
   width: 70%;
+  justify-content: flex-end;
 }
 
 .navBar__menu li {
@@ -46,14 +47,14 @@
 }
 
 .navBar__menu__item:hover {
-  background-color: #d7373ada;
+  background-color: rgba(255, 255, 255, 0.507);
 }
 
 .navBar__toggle-btn {
   position: absolute;
-  top: 18px;
-  right: 0px;
-  font-size: 20px;
+  top: 15px;
+  right: 10px;
+  font-size: 25px;
   display: none;
   /* opacity 하면 none show 상태에서 클릭이 됌*/
 }
@@ -65,22 +66,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
-  animation: bgEffect 2s linear infinite;
-}
-
-@keyframes bgEffect {
-  0% {
-    background-color: rgb(80, 97, 50);
-  }
-  25% {
-    background-color: rgba(80, 97, 50, 0.924);
-  }
-  50% {
-    background-color: rgba(80, 97, 50, 0.849);
-  }
-  100% {
-    background-color: rgb(80, 97, 50);
-  }
+  background: no-repeat center/cover url("/imgs/bg-image.png");
 }
 
 .home__image {
@@ -95,6 +81,10 @@
   padding: 25px 8px;
   border: var(--border-medium);
   background-color: whitesmoke;
+}
+
+.home .section__container {
+  margin-top: 120px;
 }
 
 .avatar__btn {

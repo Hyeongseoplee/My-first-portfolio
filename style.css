@@ -73,24 +73,29 @@ p {
 /*responsive*/
 
 @media screen and (max-width: 768px) {
-  .navBar__toggle-btn {
-    display: block;
-  }
-
   .navBar {
+    display: Flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .navBar__toggle-btn {
+    display: block;
   }
 
   .navBar__menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0px 30px;
   }
 
   .navBar__menu li {
-    width: 100%;
-    text-align: center;
+    margin: 0px;
+  }
+
+  .home .section__container {
+    margin-top: 280px;
   }
 
   .about__canDos {
