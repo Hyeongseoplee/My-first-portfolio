@@ -73,25 +73,29 @@ p {
 /*responsive*/
 
 @media screen and (max-width: 768px) {
-  .navBar {
+  .home .navBar {
     display: Flex;
     flex-direction: column;
     align-items: flex-start;
+    position: absolute;
+    top: 0;
   }
 
-  .navBar__toggle-btn {
+  .home .navBar .navBar__toggle-btn {
     display: block;
   }
 
-  .navBar__menu {
+  .home .navBar .navBar__menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0px 30px;
   }
 
-  .navBar__menu li {
-    margin: 0px;
+  .home .navBar .navBar__menu .navBar__menu__item {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 0px;
   }
 
   .home .section__container {
