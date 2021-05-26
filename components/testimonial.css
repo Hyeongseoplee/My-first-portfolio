@@ -1,0 +1,51 @@
+/*Testimonial*/
+#testimonial {
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcead;
+  padding: 30px 30px;
+}
+
+.testimonials {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.testimonial {
+  display: Flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.testimonial .testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial .testimonial__avatar:nth-child(even) {
+  margin-left: 50px;
+}
+
+.testimonial .testimonial__avatar:nth-child(odd) {
+  margin-right: 50px;
+}
+
+.recommend__speech-bubble {
+  background-color: white;
+  width: 80%;
+  height: 160px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.recommend__speech-bubble .name {
+  margin-top: 12px;
+  color: rgb(255, 101, 101);
+}

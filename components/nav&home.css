@@ -1,0 +1,146 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+
+  transition:background-color .2s linear;
+  z-index:10;
+}
+
+.navbar--violet{
+  background-color:#867ae9;
+}
+
+.navBar img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.navBar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-medium);
+}
+
+.navBar__logo a {
+  font-size: var(--font-medium);
+  font-weight: var(--font-bold);
+}
+
+.navBar__menu {
+  display: Flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.navBar__menu__item {
+  width: 100px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 2px;
+  transition: border 0.2s linear, background-color 0.2s linear;
+}
+
+.navBar__menu__item:hover{
+  background-color: rgba(255, 255, 255, 0.507);
+}
+
+.navBar__toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 25px;
+display:none;
+  /* opacity 하면 none show 상태에서 클릭이 됌*/
+}
+
+/*Home*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  background: no-repeat center/cover url("/imgs/bg-image.png");
+height:100%;
+}
+
+.home .home--transparent{
+  animation: fadeOut .3s linear forwards;
+}
+
+@keyframes fadeOut {
+from{opacity: 1}
+to{opacity: 0}  
+}
+
+
+.home__image {
+  position: relative;
+}
+
+.home .home__avatar {
+  width: 150px;
+  height: 280px;
+  background: center;
+  border-radius: 11%;
+  padding: 25px 8px;
+  border: var(--border-medium);
+  background-color: whitesmoke;
+  margin-top: 0px;
+}
+
+.section__container {
+  margin-top: 120px;
+}
+
+.avatar__btn {
+  width: 15px;
+  height: 15px;
+  border: var(--border-medium);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  left: 69px;
+  transition: background-color 0.3s linear;
+}
+
+.avatar__btn:hover {
+  background-color: var(--color-black);
+}
+
+.home__title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.home__contact {
+  margin-top: 20px;
+  border: solid 1px black;
+  padding: 6px;
+  border-radius: 3px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+

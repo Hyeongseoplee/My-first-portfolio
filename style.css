@@ -1,63 +1,138 @@
-:root{
+@import url("components/nav&home.css");
+@import url("components/about.css");
+@import url("components/variable.css");
+@import url("components/skills.css");
+@import url("components/work.css");
+@import url("components/testimonial.css");
+@import url("components/footer.css");
 
-    /* Color */
-    --color-white: #ffffff;
-    --color-light-white: #eeeeee;
-    --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
-    --color-dark-grey: #4d4d4d;
-    --color-grey: #616161;
-    --color-light-grey: #7c7979;
-    --color-blue: #73aace;
-    --color-yellow: #fff7d1;
-    --color-orange: #feb546;
-    --color-black: #000000;
-  
-      /*Font size*/
-      --font-large:48px;
-      --font-medium:28px;
-      --font-regular:16px;
-      --font-small:16px;
-      --font-micro:14px;
-  
-      /* Font weight*/
-      --font-bold:700;
-      --font-semi-bold:600;
-      --font-regular:400;
+/*Universal tags*/
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a,
+li,
+button {
+  all: unset;
+  color: black;
+  cursor: pointer;
+}
+
+/*Typography*/
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  margin: 18px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+  color: var(--color-black);
+  margin: 14px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 10px 0;
+}
+p {
+  font-size: var(--font-micro);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+/*Section common*/
+
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.section__container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+.home{
+  height:1000px;
+}
+
+  .home .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+.navBar__toggle-btn{
+display:flex;
+}
+
+.home .navBar .navBar__menu {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 30px;
+  height: 50%;
+  display:none;
+}
+
+.hide{
+  display:none;
   
-  /*Universal tags*/
-  *{
-      box-sizing: border-box;
+}
+
+  .home .navBar .navBar__menu .navBar__menu__item {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 0px;
   }
-  
-  
-  /*Typography*/
-  h1{
-      font-size:var(--font-large);
-      font-weight: var(--font-bold);
-      color:var(--color-black);
-      margin: 18px 0; 
+
+  .home .sections__container {
+    margin-top:400px;
   }
-  
-  h2{
-      font-size:var(--font-medium);
-      font-weight: var(--font-semi-bold);
-      color:var(--color-black);
-      margin: 14px 0; 
+
+  .about__canDos {
+    flex-direction: column;
   }
-  
-  h3{
-      font-size:var(--font-regular);
-      font-weight: var(--font-regular);
-      color:var(--color-black);
-      margin: 12px 0; 
+
+  .about__canDos .canDo {
+    margin-bottom: 20px;
   }
-  p{
-      font-size:var(--font-regular);
-      font-weight: var(--font-regular);
-      color:var(--color-black);
-      margin: 12px 0; 
+
+  .canDo__title {
+    width: 100%;
   }
-  
+
+  .skillsets {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+}

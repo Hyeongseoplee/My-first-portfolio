@@ -1,1 +1,1 @@
-# This will be my first lovely portfolio template. 
+# This will be my first lovely portfolio. :)

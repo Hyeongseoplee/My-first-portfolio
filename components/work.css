@@ -1,0 +1,116 @@
+/*Work*/
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__categories {
+  display: flex;
+  border-top: solid 3px black;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.category__btn {
+  width: 140px;
+  height: 40px;
+  margin: 40px 1px 20px 0px;
+  border: solid 1px rgba(128, 128, 128, 0.339);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.category__btn:active,
+.category__btn:hover {
+  background-color: tomato;
+}
+
+.category__btn--focused {
+  background-color: tomato;
+}
+
+.category__count {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: orange;
+  color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 8px;
+  line-height: 25px;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  transition: opacity 0.3s linear, transform 0.3s linear;
+}
+
+.category__btn:hover .category__count {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 200px;
+  height: 250px;
+  margin: 2px;
+  position: relative;
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s linear, transform 0.2s linear,
+  color .3s linear;
+}
+
+.project__description h3,
+.project__description span{
+  color:white;
+
+}
+
+.project__description:hover {
+  opacity: 1;
+  transform: translateY(0px);
+  color: white;
+}
+
+.project__description h3 {
+  color: white;
+  margin: 0;
+}
+
+.project__description h3::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 20px auto;
+}

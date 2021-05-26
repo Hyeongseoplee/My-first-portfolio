@@ -1,0 +1,103 @@
+/*Skills*/
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  background-color: #fff5ab;
+}
+
+.skillsets {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  background-color: rosybrown;
+  margin-top: 30px;
+}
+
+.skillset__title {
+  width: 100%;
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  display: Flex;
+  flex-direction: column;
+  background-color: #494949;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.skillset__right {
+  background-color: #757575;
+  flex-basis: 40%;
+  height: 100%;
+  color: whitesmoke;
+}
+
+.skillset__left .skill {
+  display: Flex;
+  flex-direction: column;
+}
+
+.skill__bar {
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.281);
+  margin-top: 5px;
+}
+
+.skill__value {
+  background-color: darkorange;
+  height: 5px;
+}
+
+.skill__value--html {
+  width: 70%;
+}
+
+.skill__value--css {
+  width: 60%;
+}
+
+.skill__value--js {
+  width: 30%;
+}
+
+.skillset__right .etc {
+  background-color: #949494;
+}
+
+.skill__description {
+  margin-bottom: 30px;
+}
+
+.description__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.etc,
+.tools {
+  height: 50%;
+  padding: 20px;
+}
+
+.tools__list,
+.etc__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  font-size: var(--font-micro);
+}
+
+.tools__list li,
+.etc__list li {
+  color: whitesmoke;
+}
