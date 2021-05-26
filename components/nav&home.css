@@ -11,7 +11,7 @@
 }
 
 .navbar--violet{
-  background-color:#867ae9;
+  background-color:rgb(174, 93, 250);
 }
 
 .navBar img {
@@ -61,6 +61,22 @@
   font-size: 25px;
 display:none;
   /* opacity 하면 none show 상태에서 클릭이 됌*/
+}
+
+.arrowUpBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  font-size: 40px;
+  color:rgb(174, 93, 250);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s linear;
+}
+
+.showing{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /*Home*/

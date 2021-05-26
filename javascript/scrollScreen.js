@@ -22,13 +22,32 @@ contactBtn.addEventListener('click', (event) => {
 footer.scrollIntoView({behavior:"smooth"});
 })
 
-/* Make a tranparent Home*/
+/* Make a transparent Home*/
 
 const home = document.querySelector(".home");
 const homeSection = document.querySelector(".section__container")
-const homeHeight = homeSection.getBoundingClientRect().height;
+const homeSecHeight = homeSection.getBoundingClientRect().height;
+
+
+document.addEventListener('scroll', ()=>{
+    homeSection.style.opacity= 1 - window.scrollY/homeSecHeight;
+})
+
+/* Make a arrow up button */
+
+const homeHeight = home.getBoundingClientRect().height;
+const arrowUpBtn = document.querySelector(".arrowUpBtn");
 
 console.log(homeHeight);
-document.addEventListener('scroll', ()=>{
-    homeSection.style.opacity= 1 - window.scrollY/homeHeight;
+
+document.addEventListener('scroll', () => {
+     if(window.scrollY > homeHeight/2){
+        arrowUpBtn.classList.add("showing");
+     }else{
+        arrowUpBtn.classList.remove("showing");
+     }
+})
+
+arrowUpBtn.addEventListener('click', () => {
+    home.scrollIntoView({behavior:"smooth"});
 })
